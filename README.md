@@ -58,32 +58,42 @@ UrbanFlow AI acts as an intelligent decision-support layer for logistics operati
 
 It takes logistics data as input, analyzes it using AI/ML techniques, identifies inefficiencies, and generates optimized recommendations.
 
-```text
-             Logistics Data
-                   │
-                   ▼
-          ┌─────────────────┐
-          │ Data Processing │
-          └────────┬────────┘
-                   │
-                   ▼
-          ┌─────────────────┐
-          │ AI / ML Engine  │
-          └────────┬────────┘
-                   │
-        ┌──────────┼───────────┐
-        ▼          ▼           ▼
-     Demand      Routes      Resource
-   Prediction  Optimization  Allocation
-        │          │           │
-        └──────────┼───────────┘
-                   ▼
-          ┌─────────────────┐
-          │ AI Insights &   │
-          │ Recommendations │
-          └────────┬────────┘
-                   │
-                   ▼
-          ┌─────────────────┐
-          │ Smart Dashboard │
-          └─────────────────┘
+```
++-----------------------------------------------------------------------------------+
+|                            FRONTEND / USER INTERFACE                              |
+|           React.js  |  Leaflet / Mapbox  |  HTML5 Canvas Rendering                |
++-----------------------------------------------------------------------------------+
+       ▲                                     │                                ▲
+       │ (Live ETAs / Proof)                 │ (Order Requests / Overrides)   │ (AI Decision Logs)
+       │                                     ▼                                │
++-----------------------------------------------------------------------------------+
+|                        REAL-TIME COMMUNICATION LAYER                              |
+|                   WebSockets (Bi-directional)  |  REST APIs                           |
++-----------------------------------------------------------------------------------+
+       ▲                                     │                                ▲
+       │ (State Updates)                     │ (API Payload)                  │ (Streamed Logs)
+       │                                     ▼                                │
++-----------------------------------------------------------------------------------+
+|                     BACKEND APPLICATION SERVICES (Python)                         |
+|                       FastAPI Engine  |  Uvicorn ASGI Server                      |
++-----------------------------------------------------------------------------------+
+       │                                     │                                ▲
+       │ (Read/Write States)                 │ (Solve Request)                │ (Optimized Routes)
+       ▼                                     ▼                                │
++-----------------------------------+   +-------------------------------------------+
+|    DATA PERSISTENCE & CACHING     |   |          OPTIMIZATION & AI LAYER          |
+|  PostgreSQL (Relational Storage)  |   |  Google OR-Tools (Soft-bound VRP Solver)  |
+|  Redis (Live Matrices / Sessions) |   |  OpenAI API / LLM (Decision Logger)       |
++-----------------------------------+   +-------------------------------------------+
+                                                     │
+                                                     │ (Algorithmic Logic)
+                                                     ▼
+                                        +-------------------------------------------+
+                                        |          DATA SCIENCE & ANALYTICS         |
+                                        |  - Vehicle Routing Problem (VRP)          |
+                                        |  - Multi-Objective Optimization           |
+                                        |  - Geospatial Analytics                   |
+                                        |  - Fleet Utilization Algorithms           |
+                                        +-------------------------------------------+
+
+```
