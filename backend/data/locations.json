@@ -1,0 +1,62 @@
+{
+  "D1": {
+    "name": "Central Depot",
+    "latitude": 18.5204,
+    "longitude": 73.8567,
+    "type": "depot"
+  },
+  "D2": {
+    "name": "East Depot",
+    "latitude": 18.5362,
+    "longitude": 73.8958,
+    "type": "depot"
+  },
+  "L01": {
+    "name": "Shivajinagar",
+    "latitude": 18.5308,
+    "longitude": 73.8478,
+    "type": "delivery"
+  },
+  "L02": {
+    "name": "Deccan",
+    "latitude": 18.5167,
+    "longitude": 73.8410,
+    "type": "delivery"
+  },
+  "L03": {
+    "name": "Kothrud",
+    "latitude": 18.5074,
+    "longitude": 73.8077,
+    "type": "delivery"
+  },
+  "L04": {
+    "name": "Aundh",
+    "latitude": 18.5590,
+    "longitude": 73.8070,
+    "type": "delivery"
+  },
+  "L05": {
+    "name": "Baner",
+    "latitude": 18.5590,
+    "longitude": 73.7868,
+    "type": "delivery"
+  },
+  "L06": {
+    "name": "Viman Nagar",
+    "latitude": 18.5679,
+    "longitude": 73.9143,
+    "type": "delivery"
+  },
+  "L07": {
+    "name": "Koregaon Park",
+    "latitude": 18.5362,
+    "longitude": 73.8958,
+    "type": "delivery"
+  },
+  "L08": {
+    "name": "Hadapsar",
+    "latitude": 18.5089,
+    "longitude": 73.9260,
+    "type": "delivery"
+  }
+}
